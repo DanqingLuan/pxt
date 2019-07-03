@@ -1751,6 +1751,7 @@ export class ProjectView
     }
 
     createProjectAsync(options: ProjectCreationOptions): Promise<void> {
+      
         this.setSideDoc(undefined);
         if (!options.prj) options.prj = pxt.appTarget.blocksprj;
         let cfg = pxt.U.clone(options.prj.config);
